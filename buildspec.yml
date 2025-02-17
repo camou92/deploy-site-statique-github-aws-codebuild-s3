@@ -6,15 +6,15 @@ phases:
       - echo Installing dependencies...
   pre_build:
     commands:
-      - echo start prebuild and end it
+      - echo start prebuild and end it    
   build:
     commands:
-      - echo Running build
+      - echo Running buuild
   post_build:
     commands:
-      - echo build completed successfully
-  
-  artifacts:
-    files:
-      - "**/**"
-    base-directory: .
+      - echo Build completed successfully.
+
+artifacts:
+  files:
+    - "**/*"
+  base-directory: .  # Specify where artifacts are stored
